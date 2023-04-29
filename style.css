@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+      Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+      sans-serif;
+    background: var(--DarkBlue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+  }
+  :root {
+    --GrayishBlue: hsl(217, 19%, 38%);
+    --DarkGrayishBlue: hsl(217, 19%, 24%);
+    --DarkBlue: hsl(218, 23%, 16%);
+    --LightCyan: hsl(193, 38%, 86%);
+    --NeonGreen: hsl(150, 100%, 66%);
+  }
+  .container {
+    background: var(--DarkGrayishBlue);
+    width: 500px;
+    height: 250px;
+    border-radius: 10px;
+  }
+
+  .middle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+  }
+  .middle h1 {
+    color: var(--NeonGreen);
+    letter-spacing: 5px;
+  }
+  .middle #İD {
+    color: var(--NeonGreen);
+  }
+  .imgs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  #text {
+    font-size: 25px;
+    color: var(--LightCyan);
+    text-align: center;
+  }
+  .imgtwo {
+    box-shadow: 0 0 5px 15px var(--NeonGreen);
+    border-radius: 100%;
+    background: var(--NeonGreen);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .imgtwo:active {
+    transform: scale(0.9);
+  }
